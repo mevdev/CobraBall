@@ -7,15 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		801BB7B71A17D94B0000F359 /* cobraBall.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 801BB7B61A17D94B0000F359 /* cobraBall.tmx */; };
+		801BB8061A17D9860000F359 /* chair.png in Resources */ = {isa = PBXBuildFile; fileRef = 801BB7C81A17D9860000F359 /* chair.png */; };
+		801BB83A1A17DEA50000F359 /* office.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 801BB8391A17DEA50000F359 /* office.tmx */; };
+		801BB83F1A17E3130000F359 /* isometric.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 801BB83E1A17E3130000F359 /* isometric.tmx */; };
+		801BB8411A17E31F0000F359 /* isometric_tileset.png in Resources */ = {isa = PBXBuildFile; fileRef = 801BB8401A17E31F0000F359 /* isometric_tileset.png */; };
+		801BB8431A1808500000F359 /* cubicles.png in Resources */ = {isa = PBXBuildFile; fileRef = 801BB8421A1808500000F359 /* cubicles.png */; };
+		801BB8451A1808580000F359 /* carpet.png in Resources */ = {isa = PBXBuildFile; fileRef = 801BB8441A1808580000F359 /* carpet.png */; };
+		801BB8471A1808710000F359 /* cobraBall2.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 801BB8461A1808710000F359 /* cobraBall2.tmx */; };
 		80D9A93C1A14732200ACD206 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D9A93B1A14732200ACD206 /* main.m */; };
 		80D9A93F1A14732200ACD206 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D9A93E1A14732200ACD206 /* AppDelegate.m */; };
 		80D9A9421A14732200ACD206 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D9A9411A14732200ACD206 /* GameScene.m */; };
-		80D9A9441A14732200ACD206 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 80D9A9431A14732200ACD206 /* GameScene.sks */; };
 		80D9A9471A14732200ACD206 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D9A9461A14732200ACD206 /* GameViewController.m */; };
 		80D9A94A1A14732200ACD206 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80D9A9481A14732200ACD206 /* Main.storyboard */; };
 		80D9A94C1A14732200ACD206 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80D9A94B1A14732200ACD206 /* Images.xcassets */; };
 		80D9A94F1A14732200ACD206 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80D9A94D1A14732200ACD206 /* LaunchScreen.xib */; };
 		80D9A95B1A14732200ACD206 /* Cobra_Ball_SpritekitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D9A95A1A14732200ACD206 /* Cobra_Ball_SpritekitTests.m */; };
+		80D9A9691A14772400ACD206 /* JSTileMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D9A9661A14772400ACD206 /* JSTileMap.m */; };
+		80D9A96A1A14772400ACD206 /* LFCGzipUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D9A9681A14772400ACD206 /* LFCGzipUtility.m */; };
+		80D9A96E1A14788700ACD206 /* iso-64x64-outside.png in Resources */ = {isa = PBXBuildFile; fileRef = 80D9A96B1A14788700ACD206 /* iso-64x64-outside.png */; };
+		80D9A96F1A14788700ACD206 /* iso-test-1.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 80D9A96C1A14788700ACD206 /* iso-test-1.tmx */; };
+		80D9A9701A14788700ACD206 /* iso-test-2.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 80D9A96D1A14788700ACD206 /* iso-test-2.tmx */; };
+		80D9A9721A14790000ACD206 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 80D9A9711A14790000ACD206 /* libz.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +42,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		801BB7B61A17D94B0000F359 /* cobraBall.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = cobraBall.tmx; sourceTree = "<group>"; };
+		801BB7C81A17D9860000F359 /* chair.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = chair.png; path = out_chair/chair.png; sourceTree = "<group>"; };
+		801BB8391A17DEA50000F359 /* office.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = office.tmx; sourceTree = "<group>"; };
+		801BB83E1A17E3130000F359 /* isometric.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = isometric.tmx; sourceTree = "<group>"; };
+		801BB8401A17E31F0000F359 /* isometric_tileset.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = isometric_tileset.png; sourceTree = "<group>"; };
+		801BB8421A1808500000F359 /* cubicles.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cubicles.png; sourceTree = "<group>"; };
+		801BB8441A1808580000F359 /* carpet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = carpet.png; sourceTree = "<group>"; };
+		801BB8461A1808710000F359 /* cobraBall2.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = cobraBall2.tmx; sourceTree = "<group>"; };
 		80D9A9361A14732200ACD206 /* Cobra Ball Spritekit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cobra Ball Spritekit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		80D9A93A1A14732200ACD206 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		80D9A93B1A14732200ACD206 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -36,7 +57,6 @@
 		80D9A93E1A14732200ACD206 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		80D9A9401A14732200ACD206 /* GameScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
 		80D9A9411A14732200ACD206 /* GameScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
-		80D9A9431A14732200ACD206 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		80D9A9451A14732200ACD206 /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
 		80D9A9461A14732200ACD206 /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
 		80D9A9491A14732200ACD206 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -45,6 +65,14 @@
 		80D9A9541A14732200ACD206 /* Cobra Ball SpritekitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cobra Ball SpritekitTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		80D9A9591A14732200ACD206 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		80D9A95A1A14732200ACD206 /* Cobra_Ball_SpritekitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Cobra_Ball_SpritekitTests.m; sourceTree = "<group>"; };
+		80D9A9651A14772400ACD206 /* JSTileMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSTileMap.h; sourceTree = "<group>"; };
+		80D9A9661A14772400ACD206 /* JSTileMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSTileMap.m; sourceTree = "<group>"; };
+		80D9A9671A14772400ACD206 /* LFCGzipUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFCGzipUtility.h; sourceTree = "<group>"; };
+		80D9A9681A14772400ACD206 /* LFCGzipUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFCGzipUtility.m; sourceTree = "<group>"; };
+		80D9A96B1A14788700ACD206 /* iso-64x64-outside.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iso-64x64-outside.png"; sourceTree = "<group>"; };
+		80D9A96C1A14788700ACD206 /* iso-test-1.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "iso-test-1.tmx"; sourceTree = "<group>"; };
+		80D9A96D1A14788700ACD206 /* iso-test-2.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "iso-test-2.tmx"; sourceTree = "<group>"; };
+		80D9A9711A14790000ACD206 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80D9A9721A14790000ACD206 /* libz.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,13 +119,14 @@
 				80D9A93E1A14732200ACD206 /* AppDelegate.m */,
 				80D9A9401A14732200ACD206 /* GameScene.h */,
 				80D9A9411A14732200ACD206 /* GameScene.m */,
-				80D9A9431A14732200ACD206 /* GameScene.sks */,
 				80D9A9451A14732200ACD206 /* GameViewController.h */,
 				80D9A9461A14732200ACD206 /* GameViewController.m */,
 				80D9A9481A14732200ACD206 /* Main.storyboard */,
 				80D9A94B1A14732200ACD206 /* Images.xcassets */,
 				80D9A94D1A14732200ACD206 /* LaunchScreen.xib */,
+				80D9A9641A14772400ACD206 /* JSTilemap */,
 				80D9A9391A14732200ACD206 /* Supporting Files */,
+				80D9A9711A14790000ACD206 /* libz.dylib */,
 			);
 			path = "Cobra Ball Spritekit";
 			sourceTree = "<group>";
@@ -104,6 +134,17 @@
 		80D9A9391A14732200ACD206 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				801BB7B61A17D94B0000F359 /* cobraBall.tmx */,
+				801BB8461A1808710000F359 /* cobraBall2.tmx */,
+				801BB83E1A17E3130000F359 /* isometric.tmx */,
+				801BB8401A17E31F0000F359 /* isometric_tileset.png */,
+				801BB8391A17DEA50000F359 /* office.tmx */,
+				801BB8421A1808500000F359 /* cubicles.png */,
+				801BB8441A1808580000F359 /* carpet.png */,
+				801BB7C81A17D9860000F359 /* chair.png */,
+				80D9A96B1A14788700ACD206 /* iso-64x64-outside.png */,
+				80D9A96C1A14788700ACD206 /* iso-test-1.tmx */,
+				80D9A96D1A14788700ACD206 /* iso-test-2.tmx */,
 				80D9A93A1A14732200ACD206 /* Info.plist */,
 				80D9A93B1A14732200ACD206 /* main.m */,
 			);
@@ -125,6 +166,17 @@
 				80D9A9591A14732200ACD206 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		80D9A9641A14772400ACD206 /* JSTilemap */ = {
+			isa = PBXGroup;
+			children = (
+				80D9A9651A14772400ACD206 /* JSTileMap.h */,
+				80D9A9661A14772400ACD206 /* JSTileMap.m */,
+				80D9A9671A14772400ACD206 /* LFCGzipUtility.h */,
+				80D9A9681A14772400ACD206 /* LFCGzipUtility.m */,
+			);
+			path = JSTilemap;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,8 +261,18 @@
 			files = (
 				80D9A94F1A14732200ACD206 /* LaunchScreen.xib in Resources */,
 				80D9A94C1A14732200ACD206 /* Images.xcassets in Resources */,
-				80D9A9441A14732200ACD206 /* GameScene.sks in Resources */,
+				801BB8451A1808580000F359 /* carpet.png in Resources */,
+				80D9A96F1A14788700ACD206 /* iso-test-1.tmx in Resources */,
+				801BB8411A17E31F0000F359 /* isometric_tileset.png in Resources */,
+				801BB8431A1808500000F359 /* cubicles.png in Resources */,
+				801BB83A1A17DEA50000F359 /* office.tmx in Resources */,
+				80D9A96E1A14788700ACD206 /* iso-64x64-outside.png in Resources */,
+				801BB7B71A17D94B0000F359 /* cobraBall.tmx in Resources */,
+				801BB8061A17D9860000F359 /* chair.png in Resources */,
 				80D9A94A1A14732200ACD206 /* Main.storyboard in Resources */,
+				80D9A9701A14788700ACD206 /* iso-test-2.tmx in Resources */,
+				801BB8471A1808710000F359 /* cobraBall2.tmx in Resources */,
+				801BB83F1A17E3130000F359 /* isometric.tmx in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,8 +291,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				80D9A9471A14732200ACD206 /* GameViewController.m in Sources */,
+				80D9A9691A14772400ACD206 /* JSTileMap.m in Sources */,
 				80D9A93F1A14732200ACD206 /* AppDelegate.m in Sources */,
 				80D9A9421A14732200ACD206 /* GameScene.m in Sources */,
+				80D9A96A1A14772400ACD206 /* LFCGzipUtility.m in Sources */,
 				80D9A93C1A14732200ACD206 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -356,6 +420,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Cobra Ball Spritekit/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -366,6 +431,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Cobra Ball Spritekit/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -424,6 +490,7 @@
 				80D9A9601A14732200ACD206 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		80D9A9611A14732200ACD206 /* Build configuration list for PBXNativeTarget "Cobra Ball SpritekitTests" */ = {
 			isa = XCConfigurationList;
@@ -432,6 +499,7 @@
 				80D9A9631A14732200ACD206 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

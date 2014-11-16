@@ -8,6 +8,14 @@
 
 #import <SpriteKit/SpriteKit.h>
 
+@class JSTileMap;
+
 @interface GameScene : SKScene
 
+@property (strong, nonatomic) JSTileMap* tiledMap;
+@property (strong, nonatomic) SKNode* worldNode;//weak
+
+- (void) swapToNextMap;
+
+- (void)moveWorld:(CGPoint)delta;
 @end
