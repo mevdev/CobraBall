@@ -54,12 +54,36 @@
 
 - (CGPoint) coordForPoint:(CGPoint) inPoint
 {
-	// invert y axis
-	inPoint.y = [self layerHeight] - inPoint.y;
-	
-	NSInteger x = inPoint.x / _mapTileSize.height;
-	NSInteger y = (NSInteger)inPoint.y / _mapTileSize.width;
-	
+//#warning improvement for iso
+    NSInteger x;
+    NSInteger y;
+//    JSTileMap *mapInfo = (JSTileMap *)[self parent];
+//    // make sure it's in the right position.
+//				if ((OrientationStyle)mapInfo.orientation == OrientationStyle_Isometric)
+//                {
+//                    sprite.position = CGPointMake((layer.mapTileSize.width / 2.0) * (layerInfo.layerGridSize.width + col - row - 1),
+//                                                  (layer.mapTileSize.height / 2.0) * ((layerInfo.layerGridSize.height * 2 - col - row) - 2) );
+//                }
+//                else
+//                {
+//                    sprite.position = CGPointMake(col * layer.mapTileSize.width + layer.mapTileSize.width/2.0,
+//                                                  (mapInfo.mapSize.height * (tilesetInfo.tileSize.height)) - ((row + 1) * layer.mapTileSize.height) + layer.mapTileSize.height/2.0);
+//                }
+    if (YES) //mapInfo.orientation == OrientationStyle_Isometric)
+    {
+        // invert y axis
+        inPoint.y = [self layerHeight] - inPoint.y;
+        
+        x = inPoint.x / _mapTileSize.height;
+        y = (NSInteger)inPoint.y / _mapTileSize.width;
+    } else {
+//        // invert y axis
+//        inPoint.y = [self layerHeight] - inPoint.y;
+//        
+//        x = inPoint.x / _mapTileSize.height;
+//        y = (NSInteger)inPoint.y / _mapTileSize.width;
+//        
+    }
 	return CGPointMake(x, y);
 }
 
@@ -1144,7 +1168,7 @@
 				return;
 			}
 			
-			len = buffer.length;
+			len = (int)buffer.length;
 			
 			if( layerAttributes & (TMXLayerAttributeGzip | TMXLayerAttributeZlib) )
 			{
@@ -1180,7 +1204,7 @@
 				int x = 0;
 				for (NSString* gid in self.gidData)
 				{
-					layer.tiles[x] = [gid integerValue];
+					layer.tiles[x] = (int)[gid integerValue];
 					x++;
 				}
 			}

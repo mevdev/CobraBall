@@ -112,16 +112,18 @@
 -(void)createHud {
     
     SKLabelNode *timeLabel = [SKLabelNode labelNodeWithFontNamed:@"AvenirNextCondensed-BoldItalic"];
-    timeLabel.position = CGPointMake(0, self.view.frame.size.height-40);
+    timeLabel.position = CGPointMake(0, self.size.height-40);
     [timeLabel setText:@"30"];
     timeLabel.fontSize = 16.0f;
     timeLabel.zPosition = 100;
+    timeLabel.fontColor = [UIColor yellowColor];
     [self addChild:timeLabel];
     
     SKLabelNode *logLabel = [SKLabelNode labelNodeWithFontNamed:@"AvenirNextCondensed-BoldItalic"];
     logLabel.fontSize = 16.0f;
-    logLabel.position = CGPointMake(0, self.view.frame.size.height-40);
+    logLabel.position = CGPointMake(70, self.size.height-40);
     [logLabel setText:@"debug"];
+    logLabel.fontColor = [UIColor whiteColor];
     logLabel.zPosition = 100;
     [self addChild:logLabel];
     
@@ -153,12 +155,14 @@
   
     NSLog(@"touchScene: {%@,%@}",@(actualPoint.x),@(actualPoint.y));
     //Layer? Coord?
-    TMXLayerInfo *layerInfo = [self.tiledMap.layers objectAtIndex:0];
-  CGPoint coords = [layerInfo.layer coordForPoint:actualPoint];
+    TMXLayerInfo *layerInfo = [self.tiledMap.layers objectAtIndex:1];
+    CGPoint coords = [layerInfo.layer coordForPoint:actualPoint];
 //        CGPoint coords = [self.tiledMap.layers[0] coordForPoint:actualPoint];
-//    CGPoint coords = [self.tiledMap.layers[0] coordForPoint:actualPoint];
+//f    CGPoint coords = [self.tiledMap.layers[0] coordForPoint:actualPoint];
     NSLog(@"coords: {%@,%@}",@(coords.x),@(coords.y));
 //    - (CGPoint)coordForPoint:(CGPoint)point;
+    SKSpriteNode *nodeFound = (SKSpriteNode *)[layerInfo.layer nodeAtPoint:actualPoint];
+    [nodeFound runAction:[SKAction sequence:@[[SKAction scaleTo:0.2f duration:0.5f],[SKAction scaleTo:1.0f duration:1.0f] ]]];
 
     
 //    TMXLayer *firstLayer = (TMXLayer *)self.tiledMap.layers[0];
